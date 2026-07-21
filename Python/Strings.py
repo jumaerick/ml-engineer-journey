@@ -1,7 +1,7 @@
 #Sequence of chars enclosed with single or double quotes
 
 #Escaping double or single quotation marks
-msg = 'It\'s a sunny day'
+msg = 'It\'s a sunny day today'
 
 #Immutable datatypes cannot be modified once declared
 

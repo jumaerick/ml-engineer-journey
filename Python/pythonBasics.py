@@ -13,7 +13,6 @@ Must only be alphanumerics
 Are case sensitive
 Can't be reserved keywords
 """
-
 #Common Datatypes
 """
 String
