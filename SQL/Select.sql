@@ -146,3 +146,17 @@ SELECT * FROM Customers WHERE City LIKE 'a%b'
 
 NOT start with the letter "a".
 SELECT * FROM Customers WHERE City NOT LIKE 'a%'
+
+-- HAVING
+
+SELECT album_id, count(id) as count
+FROM songs
+GROUP BY album_id
+HAVING count > 5;
+
+Applied to the grouped rows that are returned after a GROUP BY is applied
+
+round(value, precision)
+
+-- Subqueries
+run a query on the result set of another query - a query within a query
