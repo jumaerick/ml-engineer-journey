@@ -54,24 +54,3 @@ ingredients = pd.Series(['4 cups', '1 cup', '2 large', '1 can'],
 # print(ingredients)
 
 # reviews = pd.read_csv('../input/wine-reviews/winemag-data_first150k.csv', index_col=0)
-
-anotherSeries = pd.Series([25,10, 48])
-anotherSeriesTwo = pd.Series([25,10, 48, 23])
-
-#Extract values 
-anotherSeries.to_numpy()
-
-#check if  empty
-df.duplicated()
-
-#check if  empty
-df.drop_duplicates()
-
-#check if the entries are present in the rows
-df.isin(['erick', 'juma'])
-
-#check if not present
-~df.isin(['erick', 'juma'])
-
-#pass a value to check for
-print(df.isin({'name': ['erick'], 'age': [45]}))
