@@ -111,7 +111,19 @@ df = pd.DataFrame({"A": ["foo", "foo", "foo", "foo", "foo",
                    "D": [1, 2, 2, 3, 3, 4, 5, 6, 7],
                    "E": [2, 4, 5, 5, 6, 6, 8, 9, 9]})
 
-table = pd.pivot_table(df, values='D', index=['A', 'B'],
-                       columns=['C'], aggfunc="sum")
+import json
+strOne = '{"name": "Erick", "City": "Nairobi"}'
+strTwo = {"name": "Erick", "City": "Nairobi"}
+type(json.loads(strOne))
+json.dumps(strTwo)
 
-print(table)
+data = {"city": "Nairobi", "active": True}
+
+# Writing to a file named 'output.json'
+with open("output.json", "w") as file:
+  json.dump(data, file, indent=4)
+
+with open("output.json", "r") as file:
+   json.load(file)
+   
+
